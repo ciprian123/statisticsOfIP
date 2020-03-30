@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="statistics.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+
+    <title>Statistics</title>
+</head>
+<body>
+<div class="container">
+    <header class="nav-bar">
+        <nav>
+            <a id="logo" href="#">LOGO</a>
+            <a href="#">HOME</a>
+            <a href="#">CONTACT</a>
+            <a href="#">ABOUT</a>
+            <a id="log_out_link" href="">LOG OUT</a>
+        </nav>
+    </header>
+    <section id="main_section">
+        <div id="main_content">
+            <div id="statistics_area">
+                <h2>USERNAME'S STATISTICS</h2>
+                <div class="chart_wrapper">
+                    <h3>Your weekly profit.</h3>
+                    <div class="profit_box">
+                        <canvas id="weekly_profit"></canvas>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="chart_wrapper">
+                    <h3>Your monthly profit.</h3>
+                    <div class="profit_box">
+                        <canvas id="monthly_profit"></canvas>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="chart_wrapper">
+                    <h3>Your annual profit.</h3>
+                    <div class="profit_box">
+                        <canvas id="annual_profit"></canvas>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="chart_wrapper">
+                    <h3>Your charging location charts.</h3>
+                    <div class="profit_box">
+                        <canvas id="stations_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER START -->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>Redeem code</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                    <li>Web templates</li>
+                    <li>Email templates</li>
+                </ul>
+            </div>
+        
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script type="text/javascript" src="weeklyProfit.js"></script>
+    <script type="text/javascript" src="monthlyProfit.js"></script>
+    <script type="text/javascript" src="annualProfit.js"></script>
+    <script type="text/javascript" src="stationChart.js"></script>
+</body>
+</html>
